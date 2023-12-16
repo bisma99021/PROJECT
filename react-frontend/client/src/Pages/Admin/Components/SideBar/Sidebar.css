@@ -1,0 +1,145 @@
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 4rem;
+  transition: all 300ms ease;
+  font-family: 'Inter';
+  transition: 0.2s all;
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  height: 5rem;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 4%;
+}
+
+.logo>span {
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-left: -2rem;
+}
+
+.logo>span>span {
+  color: var(--pink);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.logo>img {
+  width: 6rem;
+  height: 4rem;
+}
+
+
+/* menu */
+.menu {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.menuItemLink {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  height: 2.1rem;
+  margin-left: 2rem;
+  position: relative;
+  transition: all 300ms ease;
+  border-radius: 0.7rem;
+  font-size: 14px;
+}
+
+.menuItemLink:hover {
+  cursor: pointer;
+}
+
+.menu .menuItem:last-child {
+  position: absolute;
+  margin-bottom: -1rem;
+  margin-left: -1.5rem;
+  width: 100%;
+}
+
+.active {
+  background: var(--activeItem);
+  margin-left: 0;
+}
+
+.active::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: var(--pink);
+  margin-right: calc(1rem - 8px);
+}
+
+.menu .menuItem:last-child {
+  position: absolute;
+  bottom: 2.3rem;
+  width: 100%;
+}
+
+.ham-sidebar {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  display: none;
+  z-index: 10;
+
+}
+
+.ham-sidebar svg {
+  font-size: 30px;
+  /* color:rgb(187, 103, 255) ; */
+}
+.active-sidebar{
+  left: 0 !important;
+}
+.cross-menu{
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  font-size: 30px;
+  display: none;
+}
+/* Tablets */
+@media screen and (max-width: 1200px) {
+  .menuItem>span {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .Sidebar {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    z-index: 14;
+    height: 100%;
+    background: linear-gradient(rgb(255 216 220) 0%, rgb(252, 146, 157) 100%);
+  } 
+  .cross-menu{
+    display: block;
+  }
+
+  .ham-sidebar {
+    display: block;
+  }
+  .active{
+    background-color: unset;
+  }
+}

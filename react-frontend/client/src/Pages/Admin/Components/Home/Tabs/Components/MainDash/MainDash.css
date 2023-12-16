@@ -1,0 +1,28 @@
+.MainDash{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h1{
+    font-size: 20px;
+    margin-top: 1rem;
+    text-align: left;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+h2{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 1200px){
+    .MainDash{
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+    h1{
+        margin-left: 1rem;
+    }
+}

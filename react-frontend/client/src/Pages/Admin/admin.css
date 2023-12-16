@@ -1,0 +1,41 @@
+.dashboard{
+    font-family: 'Inter', sans-serif;
+    background: #E8CBC0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dashboardGlass{
+    display: grid;
+    height: 96%;
+    width: 96%;
+    border-radius: 2rem;
+    background-color: var(--glass);
+    overflow: hidden;
+    grid-template-columns: 11rem auto; /* Updated to have a flexible middle section */
+    gap: 30px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+     /* Add scrolling for content if needed */
+}
+
+@media screen and (max-width: 1200px){
+    .dashboardGlass{
+        /* grid-template-columns: 10% 50% auto; */
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width:991px) {
+    .dashboardGlass{
+        grid-template-columns: unset;
+    }
+}

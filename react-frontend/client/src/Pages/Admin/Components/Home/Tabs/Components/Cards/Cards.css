@@ -1,0 +1,40 @@
+.Cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.parentContainer{
+    flex: 1;
+}
+/* For smaller tablets like iPad Mini */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+    .Cards {
+        flex-direction: column;
+    }
+
+    .parentContainer {
+        height: 7rem;
+    }
+} */
+
+/* For larger tablets like iPad Pro */
+/* @media screen and (max-width:900px) {
+    .parentContainer{
+        flex: unset;
+    }
+    .parentContainer:nth-child(1){
+        width: 49%;
+    }
+    .parentContainer:nth-child(2){
+        width: 49%;
+    }
+    .parentContainer:nth-child(3){
+        width: 100%;
+    }
+} */
+@media screen and (max-width:900px) {
+    .parentContainer{
+        width: 100% !important;
+    }
+}

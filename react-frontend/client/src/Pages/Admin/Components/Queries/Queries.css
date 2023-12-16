@@ -1,0 +1,30 @@
+.Queries {
+    display: flex;
+    justify-content: center;
+   
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 5px;
+     /* Add scrolling for content if needed */
+}
+.reply{
+  height: 40px;
+  width: 80px;
+  font-size: 15px;
+  background-color: white;
+  border: 2px solid var(--activeItem);
+  cursor: pointer;
+  font-weight: bold;
+}
+.reply:hover{
+  background: var(--activeItem);
+}
+@media screen and (max-width:991px) {
+  .responsive-table{
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+}

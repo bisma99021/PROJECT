@@ -1,0 +1,298 @@
+.main{
+    display: flex !important;
+    height: 77vh;
+    margin-top: 6rem;
+}
+.m-left{
+    display: flex; 
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.m-right{
+    flex:1;
+    position: relative;
+    left: 6%;
+}
+.m-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.m-right>:nth-child(1){
+    transform: scale(0.70);
+    left: -15%;
+    top: -17%;
+}
+.m-right>:nth-child(2){
+    transform: scale(0.81);
+    left: 4.2rem;
+    top: -3.6rem;
+}
+.m-right>:nth-child(3){
+    transform: scale(1.0);
+    left: 5%;
+    top: -13%;
+    
+}
+.m-right>:nth-child(4){
+    transform: scale(0.2);
+    left: -44%;
+    top: -41%;
+    border-radius: 50%;
+    padding: 0;
+    
+}
+.m-name{
+    display: flex;
+    flex-direction: column;
+}
+.m-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+} 
+.m-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 0 0 2px #ffa500, 0 0 5px #ffa500, 0 0 10px #ffa500, 0 0 10px #ffa500, 0 0 10px #ff0000, 0 0 10px #ff8d00, 0 0 8px #ff0000;
+    color: #fff6a9;
+}
+.m-name>:nth-child(3){
+    color: var(--gray);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.m-button{
+    width: 10rem;
+    height: 2rem;
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
+
+}
+@media screen and (max-width: 480px){
+    .main{
+        flex-direction: column;
+        height: 60rem;
+        
+    }
+    .m-name > :nth-child(1){
+        font-size: 2.3rem;
+    }
+    .m-name > :nth-child(2){
+        font-size: 2.3rem;
+    }
+    .m-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .m-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        left: 12.5rem !important;
+        top: -4.5rem !important;
+    }
+    .floating-div:nth-of-type(2){
+        left: 0.5rem !important;
+        top: 17rem !important;
+    }
+    .m-right>:nth-child(4){
+        left: -11rem !important;
+    }
+    .m-right>:nth-child(2){
+        left: 1rem !important;
+    }
+    .m-right>:nth-child(1){
+        left: -4rem !important;
+    }
+    .m-right>:nth-child(3){
+        top: -5rem !important;
+    }
+}
+/* For iPad Air and iPad Mini */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    /* Your CSS styles for iPad */
+    .main{
+        flex-direction: column;
+        height: 60rem;
+        text-align: center;
+    }
+    .m-name > :nth-child(1){
+        font-size: 2.3rem;
+    }
+    .m-name > :nth-child(2){
+        font-size: 2.3rem;
+    }
+    .m-button{
+        justify-content: center;
+        margin-left: 12.5rem;
+    }
+    .m-right{
+        transform: scale(0.8);
+        left: 3rem;
+        top: -10rem;
+    }
+    .m-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        left: 12.5rem !important;
+        top: -4.5rem !important;
+    }
+    .floating-div:nth-of-type(2){
+        left: 0.5rem !important;
+        top: 17rem !important;
+    }
+    .m-right>:nth-child(4){
+        left: -11rem !important;
+    }
+    .m-right>:nth-child(2){
+        left: 1rem !important;
+    }
+    .m-right>:nth-child(1){
+        left: -4rem !important;
+    }
+    .m-right>:nth-child(3){
+        top: -5rem !important;
+    }
+}
+@media screen and (width: 540px){
+    .main{
+        flex-direction: column;
+        height: 60rem;
+    }
+    .m-name > :nth-child(1){
+        font-size: 2.3rem;
+    }
+    .m-name > :nth-child(2){
+        font-size: 2.3rem;
+    }
+    .m-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .m-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        left: 12.5rem !important;
+        top: -4.5rem !important;
+    }
+    .floating-div:nth-of-type(2){
+        left: 0.5rem !important;
+        top: 17rem !important;
+    }
+    .m-right>:nth-child(4){
+        left: -11rem !important;
+    }
+    .m-right>:nth-child(2){
+        left: 1rem !important;
+    }
+    .m-right>:nth-child(1){
+        left: -4rem !important;
+    }
+    .m-right>:nth-child(3){
+        top: -5rem !important;
+    }
+}
+@media screen and (width: 280px){
+    .main{
+        flex-direction: column;
+        height: 60rem;
+        
+    }
+    .m-name > :nth-child(1){
+        font-size: 1.3rem;
+    }
+    .m-name > :nth-child(2){
+        font-size: 1.3rem;
+    }
+    .m-right{
+        transform: scale(0.5);
+        left: -3rem;
+        top: -13rem !important;
+    }
+    .m-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        left: 12.5rem !important;
+        top: -4.5rem !important;
+    }
+    .floating-div:nth-of-type(2){
+        left: 0.5rem !important;
+        top: 17rem !important;
+    }
+    .m-right>:nth-child(4){
+        left: -11rem !important;
+    }
+    .m-right>:nth-child(2){
+        left: 1rem !important;
+    }
+    .m-right>:nth-child(1){
+        left: -4rem !important;
+    }
+    .m-right>:nth-child(3){
+        top: -5rem !important;
+    }
+}
+@media screen and (width: 1024px){
+     /* Your CSS styles for iPad */
+    .main{
+        flex-direction: column;
+        height: 60rem;
+        text-align: center;
+    }
+    .m-name > :nth-child(1){
+        font-size: 2.3rem;
+    }
+    .m-name > :nth-child(2){
+        font-size: 2.3rem;
+    }
+    .m-button{
+        justify-content: center;
+        margin-left: 17.5rem;
+    }
+    .m-right{
+        transform: scale(0.8);
+        left: 7rem;
+        top: -10rem;
+    }
+    .m-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        left: 12.5rem !important;
+        top: -4.5rem !important;
+    }
+    .floating-div:nth-of-type(2){
+        left: 0.5rem !important;
+        top: 17rem !important;
+    }
+    .m-right>:nth-child(4){
+        left: -11rem !important;
+    }
+    .m-right>:nth-child(2){
+        left: 1rem !important;
+    }
+    .m-right>:nth-child(1){
+        left: -4rem !important;
+    }
+    .m-right>:nth-child(3){
+        top: -5rem !important;
+    }
+}

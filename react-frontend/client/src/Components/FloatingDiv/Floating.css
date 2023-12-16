@@ -1,0 +1,24 @@
+.floatingdiv{
+    justify-content: space-around;
+    display: flex;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    align-items: center;
+    padding: 0px 28px 0px 0px;
+    height: 3rem;
+    background: rgba(255, 255, 255, 0.137);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 16.5px );
+    -webkit-backdrop-filter: blur( 16.5px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+}
+.floatingdiv>img{
+    transform: scale(0.4);
+}
+.floatingdiv>span{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}

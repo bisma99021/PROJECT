@@ -1,0 +1,29 @@
+.Settings{
+    margin-top:10px;
+    margin-left: -40px !important;
+    padding: 20px;
+}
+.avatar{
+    width:100px;
+    height:100px;
+    margin-left: 6rem ;
+}		
+.personal-info{
+    width: 100%;
+}
+.setting-info{
+    margin-top: 1rem !important;
+    margin-left: 20rem !important;
+    margin-bottom: 2rem;
+}
+.setting-info h6{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.form-horizontal{
+    margin-left: 20rem;
+    padding-top: -2rem;
+}
+.text-primary{
+    margin-bottom: 1rem;
+}

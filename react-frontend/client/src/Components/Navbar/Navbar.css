@@ -1,0 +1,158 @@
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    margin-left: -70px;
+    width: 100%;
+    background-image: radial-gradient(
+        73% 147%, #eadfdf 59%, #ece2df 100%
+    ),
+    radial-gradient(
+        91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%
+    );
+    background-blend-mode: screen;
+    transition: 0.3s all;
+}
+
+.n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin-left: 100px;
+    transition: 0.3s all;
+}
+
+.n-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin-left: -3rem;
+    transition: 0.3s all;
+}
+
+.n-list {
+    flex: 2;
+}
+
+.n-list>ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.n-list>ul>li:hover {
+    cursor: pointer;
+    color: var(--black);
+}
+
+.n-button {
+    margin-right: 2rem;
+    width: 150px;
+}
+
+.active-navbar {
+    right: 0 !important;
+    transition: 0.3s all;
+}
+
+.ham-menu {
+    margin-right: 20px;
+    display: none;
+}
+
+.ham-menu svg {
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.cross {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cross svg {
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 30px;
+}
+.ham-btn{
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    .n-right {
+        padding: 30px;
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        background-color: white;
+        z-index: 4;
+    }
+
+    .n-list {
+        padding-top: 50px;
+    }
+
+    .n-right ul {
+        padding-left: 0px;
+        margin-right: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .n-right button {
+        margin-right: 0px;
+    }
+
+    .parent-active::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.7;
+        z-index: 2;
+    }
+    .d-none{
+        display: none;
+    }
+    .ham-menu,
+    .cross {
+        display: block;
+    }
+    .ham-btn{
+        display: block;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .n-wrapper{
+        margin-left: -1rem;
+    }
+    .n-name{
+        margin-left: -3rem;
+    }
+
+}

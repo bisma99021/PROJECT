@@ -1,0 +1,13 @@
+ .CustomerReview{
+    margin-top: -1rem;
+    width: 100%;
+ }
+/* For smaller tablets like iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+   .CustomerReview{
+      margin-top: -0.5rem;
+      width: 50vh;
+   }
+ }
+ 
+

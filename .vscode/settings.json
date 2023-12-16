@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Langchain/document_gpt/src",
+        "./Langchain/document_gpt/src"
+    ]
+}

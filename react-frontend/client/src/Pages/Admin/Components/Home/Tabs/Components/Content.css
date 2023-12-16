@@ -1,0 +1,44 @@
+.TabContent {
+  display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  /* Divide the space into two equal columns */
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr; */
+}
+.main-dash-section {
+  flex: 2;
+}
+.right-side-section {
+  flex: 1;
+}
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5px;
+  overflow: auto;
+  overflow-x: hidden;
+  /* Add scrolling for content if needed */
+}
+/* .content::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+} */
+
+@media screen and (max-width:1200px) {
+  .main-dash-section,.right-side-section{
+    flex: 1;
+  }
+}
+@media screen and (max-width:767px) {
+  .TabContent{
+    flex-direction: column;
+  }
+}

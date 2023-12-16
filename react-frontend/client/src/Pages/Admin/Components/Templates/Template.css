@@ -1,0 +1,13 @@
+.templates{
+    margin-top: 8rem;
+    margin-left: 4rem;
+}
+.templateCard{
+    width: 16rem;
+    height: 18rem;
+    background-image: url('https://logowik.com/content/uploads/images/adobe-pdf3324.jpg');
+    background-size: 145%;
+    background-position-x: -3.5rem;
+    background-position-y: -1.5rem;
+    cursor: pointer;
+}

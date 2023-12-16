@@ -1,0 +1,25 @@
+.Table{
+  margin-top: 2rem;
+}
+.Table h1{
+  padding-bottom: 15px;
+}
+.MuiTableRow-root>*{
+  padding: 13px;
+}
+.MuiTableRow-root.MuiTableRow-head>*{
+  font-weight: bold !important;
+  font-size: 15px !important;
+}
+.Table td, th {
+  border: none !important;
+  font-size: 15px !important;
+}
+.Table :first-child{
+  border-radius: 0.9rem !important;
+}
+@media screen and (max-width:767px) {
+  .main-table{
+    min-width: 650px;
+  }
+}
